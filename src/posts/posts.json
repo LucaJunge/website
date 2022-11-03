@@ -1,5 +1,6 @@
 {
-  "layout": "layout.njk",
+  "layout": "post.njk",
   "title": "Unbenannt",
-  "tags": "post"
+  "tags": "post",
+  "author": "Luca Junge"
 }
