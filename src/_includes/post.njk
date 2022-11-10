@@ -9,7 +9,12 @@
   </head>
   <body>
     {% include "partials/nav.njk" %}
-    <div class="max-w-sm p-3 m-4 rounded-lg shadow-lg">Testing tailwind</div>
+
+    <aside>
+    <h1>{{ title }}</h1>
+    <span>von {{ author }} am {{ page.date | readableDate }}</span>
+    </aside>
+  
     <main>
       {{ content | safe }}
     </main>

@@ -2,9 +2,6 @@
 title: Configuring Eleventy
 ---
 
-# Configuring Eleventy
+# What is Eleventy 
 
-This is an image
-
-<div class="text-red-200">heh</div>
-![Image](image.png)
+Dieser Blog  ist mit [Eleventy](https://11ty.dev) gebaut, einem Generator für statische Webseiten.
