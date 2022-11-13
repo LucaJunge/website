@@ -1,25 +1,43 @@
 ---
-layout: layout.njk
+layout: base.njk
 title: luca-junge.de
 ---
 
-<h1>Neueste Posts:</h1>
-<ul class="list-disc list-inside">
+<h1 class="mb-5 text-center md:text-left underline underline-offset-8 decoration-slate-300">Neueste Posts</h1>
+
+<ul class="list-none list-inside">
   {% for post in collections.post %}
     <li>
-      <a href="{{ post.url }}">
-        {{ post.data.title }}</a>
+      <div class="p-3 sm:w-full md:max-w-lg bg-slate-50 border border-slate-200 rounded-lg shadow-lg">
+        <a href="{{post.url}}">
+          <h5 class="text-2xl font-bold tracking-tight text-slate-900">{{post.data.title}}</h5>
+        </a>
+
+        <p class="text-slate-400 ml-1">{{post.data.author}} - {{post.date | readableDate }}</p>
+
+        <p class="mb-3 font-normal text-slate-700">{{post.templateContent | excerpt}}</p>
+
+        <a href="{{post.url}}" class="inline-flex items-center py-2 px-3 text-sm font-bold text-center text-white bg-slate-700 rounded-lg hover:bg-slate-600 transition ease-in-out">
+        Weiterlesen</a>
+      </div>
     </li>
   {% endfor %}
 </ul>
 
+<hr class="my-8">
 
-<h1>Neueste Modelle:</h1>
-<ul class="list-disc list-inside">
+<h1 class="mb-5 text-center md:text-left underline underline-offset-8 decoration-slate-300">Neueste Modelle</h1>
+
+<ul class="list-none list-inside">
   {% for post in collections.model %}
     <li>
-      <a href="{{ post.url }}">
-        {{ post.data.title }}</a>
+      <a href="{{ post.url }}" class="flex flex-col items-center bg-slate-50 border border-slate-200 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-slate-100 transition ease-in-out mb-5">
+        <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="{{ post.url }}thumbnail.jpg" alt="{{post.data.alt}}">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-slate-900 ">{{post.data.title}}</h5>
+          <p class="mb-3 font-normal text-slate-700">{{post.data.alt}}</p>
+        </div>
+      </a>
     </li>
   {% endfor %}
 </ul>

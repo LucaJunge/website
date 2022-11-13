@@ -14,6 +14,11 @@ module.exports = function (eleventyConfig) {
       zone: "Europe/Berlin"
     }).setLocale("de").toLocaleString(DateTime.DATE_FULL)
   })
+
+  eleventyConfig.addFilter("excerpt", (post) => {
+    const content = post.replace(/(<([^>]+)>)/gi, "");
+    return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+  });
   return {
     passthroughFileCopy: true,
     dir: {

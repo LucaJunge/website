@@ -8,9 +8,19 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    <model-viewer src="{{file if file else 'model.glb'}}" field-of-view="{{fieldofview if fieldofview else 'auto'}}" ar xr-environment camera-controls shadow-intensity=1>
+    <model-viewer
+    src="{{file if file else 'model.glb'}}"
+    field-of-view="{{fieldofview if fieldofview else 'auto'}}"
+    ar
+    xr-environment
+    camera-controls
+    shadow-intensity=1>
       {{content | safe}}
     </model-viewer>
+    <script>
+      self.ModelViewerElement = self.ModelViewerElement || {};
+      self.ModelViewerElement.dracoDecoderLocation = '/assets/draco/';
+    </script>
     <script type="module" src="/assets/model-viewer.min.js"></script>
   </body>
 </html>

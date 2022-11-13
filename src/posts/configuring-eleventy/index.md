@@ -2,6 +2,6 @@
 title: Configuring Eleventy
 ---
 
-# What is Eleventy 
+# Was ist Eleventy?
 
-Dieser Blog  ist mit [Eleventy](https://11ty.dev) gebaut, einem Generator für statische Webseiten.
+Eleventy ist ein Generator für statische Webseiten, der auch meine Webseite zum Laufen bringt.
