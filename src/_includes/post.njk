@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>{{ title }}</title>
   </head>
-  <body>
+  <body class="bg-gray-800 text-gray-100">
     {% include "partials/nav.njk" %}
 
-    <aside>
-    <h1>{{ title }}</h1>
-    <span>von {{ author }} am {{ page.date | readableDate }}</span>
+    <aside class="mx-auto py-4 px-4">
+      <h1>{{ title }}</h1>
+      <span>von {{ author }} am {{ page.date | readableDate }}</span>
     </aside>
-  
-    <main>
+
+    <main class="mx-auto py-4 px-4">
       {{ content | safe }}
     </main>
     {% include "partials/footer.njk" %}
