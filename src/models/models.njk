@@ -1,0 +1,16 @@
+---
+layout: post.njk
+title: Alle 3D-Modelle
+eleventyExcludeFromCollections: true
+---
+<ul class="grid gap-5 grid-cols-2 grid-rows-2 lg:grid-cols-3 lg:grid-rows-3">
+  {% for post in collections.model %}
+    <a href="{{ post.url }}" class="flex flex-col items-center text-gray-100 bg-gray-700  rounded-lg lg:flex-row lg:max-w-xl hover:bg-gray-300 transition ease-in-out">
+      <img class="object-cover w-full rounded-t-lg lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-lg" src="{{ post.url }}thumbnail.png" alt="{{post.data.alt}}">
+      <div class="w-full h-full self-center py-3 px-4 leading-normal bg-gray-600 rounded-b-lg lg:rounded-b-none lg:rounded-r-lg">
+        <h5 class="text-2xl font-bold tracking-tight text-gray-100">{{post.data.title}}</h5>
+        <p class="mb-3 font-normal text-gray-200">{{post.data.alt}}</p>
+      </div>
+    </a>
+  {% endfor %}
+</ul>

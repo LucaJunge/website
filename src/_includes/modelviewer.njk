@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="/css/modelviewer.css">
     <title>{{ title }}</title>
   </head>
-  <body>
-    <model-viewer
-    src="{{file if file else 'model.glb'}}"
+  <body class="bg-gray-800">
+    <model-viewer src="{{file if file else 'model.glb'}}"
     field-of-view="{{fieldofview if fieldofview else 'auto'}}"
     ar
     xr-environment

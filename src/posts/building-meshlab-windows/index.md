@@ -1,5 +1,6 @@
 ---
 title: Building Meshlab for Windows
+draft: true
 ---
 
 # Introduction

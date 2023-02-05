@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
     <title>{{ title }}</title>
   </head>
   <body class="bg-gray-800 text-gray-100">
     {% include "partials/nav.njk" %}
 
-    <aside class="mx-auto py-4 px-4">
-      <h1>{{ title }}</h1>
-      <span>von {{ author }} am {{ page.date | readableDate }}</span>
+    <aside class="container mx-auto py-5 px-5">
+      <a onclick="history.back()" class="cursor-pointer inline-flex items-center py-3 px-3 text-sm font-bold text-center text-white bg-gray-700 rounded-lg hover:bg-gray-600 transition ease-in-out">
+        <i class="fa fa-solid fa-angle-left mr-2"></i>Zurück
+      </a>
+      <h1 class="mt-6 text-center">{{ title }}</h1>
+      <span class="block text-gray-500 text-center">{{ page.date | readableDate }}</span>
     </aside>
 
-    <main class="mx-auto py-4 px-4">
+    <div class="container mx-auto py-5 px-5">
       {{ content | safe }}
-    </main>
+    </div>
     {% include "partials/footer.njk" %}
   </body>
 </html>

@@ -8,7 +8,7 @@ title: luca-junge.de
     <div>
       <a href="{{post.url}}" class="inline-block md:inline-block text-2xl font-bold tracking-tight text-gray-100">{{post.data.title}}</a>
 
-      <span class="block md:inline-block text-sm md:ml-2 mb-2 text-gray-500">{{post.data.author}} - {{post.date | readableDate }}</span>
+      <span class="block md:inline-block text-sm md:ml-2 mb-2 text-gray-500">{{post.date | readableDate }}</span>
 
       <p class="mb-3 font-normal text-gray-400">{{post.templateContent | excerpt}}</p>
 
@@ -18,12 +18,18 @@ title: luca-junge.de
   {% endfor %}
 </div>
 
-<hr class="my-14 md:my-14 h-px border-0 bg-gray-700">
+<div class="my-14 bg-gray-800">
+  <span class="block text-center font-bold text-gray-600">
+    <i class="fa fa-angle-up mr-1"></i>POSTS</span>
+  <hr class="h-px border-0 bg-gray-700 my-1">
+  <span class="block text-center font-bold text-gray-600">
+    <i class="fa fa-angle-down mr-1"></i>MODELS</span>
+</div>
 
-<ul class="grid gap-10 grid-cols-1 grid-rows-1 lg:grid-cols-3 lg:grid-rows-3">
+<ul class="grid gap-5 grid-cols-2 grid-rows-2 lg:grid-cols-3 lg:grid-rows-3">
   {% for post in collections.model %}
-    <a href="{{ post.url }}" class="flex flex-col items-center text-gray-100 bg-gray-700  rounded-lg lg:flex-row lg:max-w-xl hover:bg-gray-300 transition ease-in-out mb-5">
-      <img class="object-cover w-full h-96 rounded-t-lg lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-lg" src="{{ post.url }}thumbnail.png" alt="{{post.data.alt}}">
+    <a href="{{ post.url }}" class="flex flex-col items-center text-gray-100 bg-gray-700  rounded-lg lg:flex-row lg:max-w-xl hover:bg-gray-300 transition ease-in-out">
+      <img class="object-cover w-full rounded-t-lg lg:h-auto lg:w-48 lg:rounded-none lg:rounded-l-lg" src="{{ post.url }}thumbnail.png" alt="{{post.data.alt}}">
       <div class="w-full h-full self-center py-3 px-4 leading-normal bg-gray-600 rounded-b-lg lg:rounded-b-none lg:rounded-r-lg">
         <h5 class="text-2xl font-bold tracking-tight text-gray-100">{{post.data.title}}</h5>
         <p class="mb-3 font-normal text-gray-200">{{post.data.alt}}</p>
