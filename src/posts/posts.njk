@@ -1,9 +1,10 @@
 ---
 title: Alle Posts
+layout: post-list.njk
 eleventyExcludeFromCollections: true
 ---
 
-<div class="grid gap-10 gap-x-24 sm:grid-cols-1 sm:grid-rows-1 md:mt-7">
+<div class="grid gap-10 gap-x-24 sm:grid-cols-1 sm:grid-rows-1">
   {% for post in collections.post %}
     <div>
       <a href="{{post.url}}" class="inline-block md:inline-block text-2xl font-bold tracking-tight text-gray-100">{{post.data.title}}</a>

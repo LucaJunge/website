@@ -1,5 +1,5 @@
 ---
-title: Awesome Open Source tools
+title: My favorite open source tools
 header: header.jpg
 ---
 
@@ -12,45 +12,54 @@ For the few times that I need to design something or prototype something visuall
 
 ### Penpot
 
-One of the open-source tools I've fallen in love with is [Penpot](https://github.com/penpot/penpot), a fantastic web-based design and prototyping tool that's perfect for UI and UX designers. It's a real game-changer for those of us who want an alternative to popular subscription-based design tools like Sketch and Figma.
+> **Repository:** [https://github.com/penpot/penpot](https://github.com/penpot/penpot)
 
-The thing I adore about Penpot is that it's not just powerful, but also user-friendly and incredibly versatile. You can design beautiful interfaces, create interactive prototypes, and even collaborate with your team in real-time - all from within your web browser! Plus, it supports all major vector and raster file formats, so you won't have to worry about compatibility issues.
+Penpot is an exceptional open-source software due to its versatile design capabilities, collaborative features, and platform independence. It offers a range of design tools such as vector editing, layer management, and reusable components, allowing users to create detailed UI/UX designs. The platform facilitates real-time collaboration, enabling design teams to work together effectively on shared projects. As a browser-based application, Penpot is compatible with various operating systems, making it accessible to a wide range of users.
 
-Another fantastic aspect of Penpot is the active and supportive community behind it. They're always working on improvements and adding new features, making sure we have the best possible experience.
-
-If you're a designer looking to dip your toes into the open-source world or just searching for a budget-friendly design tool, Penpot is definitely one to check out! Trust me, you won't be disappointed!
+<a class="cta-button my-4" href="https://penpot.app/">Try Penpot</a>
 
 ### Excalidraw
 
-I've been loving Excalidraw lately, a fun and easy-to-use open-source whiteboard app that's perfect for brainstorming and sketching ideas. With its minimalistic interface, you can quickly create hand-drawn-like shapes, lines, and text, making your ideas come to life in no time.
+> **Repository:** [https://github.com/excalidraw/excalidraw](https://github.com/excalidraw/excalidraw)
 
-Despite its simplicity, Excalidraw offers powerful features, like real-time collaboration and easy sharing in various formats. Its open-source nature and supportive community ensure continuous improvements, making it an excellent choice for students, teachers, and professionals alike.
+Excalidraw excels as an open-source software with its user-friendly interface, powerful drawing tools, and collaborative features. Users can create freehand drawings, shapes, and insert text with customizable styles and colors. Real-time collaboration is enabled through shareable links, allowing teams to work together seamlessly. Lastly, its ability to export drawings in various formats, like SVG and PNG, makes it a versatile tool for users across different industries.
 
-If you're after a fun, user-friendly, and effective tool for visualizing your thoughts, Excalidraw is definitely worth a try!
+<a class="cta-button my-4" href="https://excalidraw.com/">Try Excalidraw</a>
 
 ## Game Development
 
-- Godot
-- Aseprite
+### Godot Engine
 
-## Modelling
+> **Repository:** [https://github.com/godotengine/godot](https://github.com/godotengine/godot)
 
-- Blender
+Godot is a remarkable open-source software due to its comprehensive game development capabilities, flexibility, and active community support. The engine provides a feature-rich environment with a powerful scene system, visual scripting, and built-in node architecture, enabling users to create both 2D and 3D games with ease. Its scripting language, GDScript, is easy to learn and offers a high level of customization, allowing developers to create unique gameplay mechanics. Furthermore, the thriving Godot community fosters continual improvement and offers invaluable resources for developers, from tutorials to asset libraries.
 
-## Texturing
+<a class="cta-button my-4" href="https://godotengine.org/">Try Godot</a>
 
-- Material Maker
-- Blender
-- Aseprite
+### Aseprite
 
-## Editing and Typing
+> **Repository:** [https://github.com/aseprite/aseprite/](https://github.com/aseprite/aseprite/)
 
-- Typst
+Aseprite is an outstanding open-source software, specifically designed for creating pixel art and animations, with a user-friendly interface and an extensive set of tools. It offers a wide range of features such as layers, frames, customizable palettes, and tileset support, which empower artists to produce detailed and intricate designs. Aseprite also includes advanced animation capabilities with onion skinning, sprite sheet generation, and loop controls, enabling users to bring their creations to life. Furthermore, the active community behind Aseprite ensures ongoing development, support, and a wealth of learning resources for users.
 
-## Other notable mentions
+<a class="cta-button my-4" href="https://www.aseprite.org/">Try Aseprite</a>
 
-#### Hello this
+## Modelling & Texturing
 
-##### is a test
+### Material Maker
 
-###### ok
+todo
+
+### Blender
+
+todo
+
+## Typesetting and Writing
+
+### Typst
+
+> **Repository:** [https://github.com/typst/typst](https://github.com/typst/typst)
+
+Typst is a great open-source software that offers seamless collaboration, customizable templates, and an intuitive environment for creating and editing documents. It runs in a browser, allowing users to work together across different locations and ensuring that everyone stays on the same page with shared documents in team workspaces. The software's reactive templates automatically format content as users type, and it supports switching templates without altering the content. With features like instant previews, clear error messages, familiar programming constructs, and easy formula editing, Typst is designed for scientific writing but is also easily accessible by beginners.
+
+<a class="cta-button my-4" href="https://typst.app/">Try Typst</a>

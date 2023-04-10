@@ -15,10 +15,12 @@ module.exports = function (eleventyConfig) {
     }).setLocale("de").toLocaleString(DateTime.DATE_FULL)
   })
 
+  // Filter for showing excerpts of posts on the "/posts/" site, limited to 180 characters (about 4 lines on mobile)
   eleventyConfig.addFilter("excerpt", (post) => {
     const content = post.replace(/(<([^>]+)>)/gi, "");
-    return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+    return content.substr(0, content.lastIndexOf(" ", 180)) + "...";
   });
+
   return {
     passthroughFileCopy: true,
     dir: {
