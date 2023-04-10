@@ -1,5 +1,6 @@
 ---
 title: Configuring Eleventy
+draft: true
 ---
 
 # Was ist Eleventy?

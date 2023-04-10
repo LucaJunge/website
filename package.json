@@ -15,7 +15,7 @@
   },
   "keywords": [],
   "author": "Luca Junge",
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "autoprefixer": "^10.4.13",

@@ -1,0 +1,9 @@
+<a href="{{ post.url }}" class="group rounded-lg flex flex-col items-center text-gray-100  lg:flex-row lg:max-w-xl">
+  <div class="bg-gray-700 group-hover:bg-gray-300 transition ease-in-out rounded-t-lg lg:rounded-none lg:rounded-l-lg overflow-hidden self-stretch">
+    <img class="object-contain object-center group-hover:scale-110 transition ease-in-out" src="{{ post.url }}thumbnail.png" alt="{{post.data.alt}}">
+  </div>
+  <div class="w-full h-full self-center py-3 px-4 leading-normal bg-gray-600 rounded-b-lg lg:rounded-b-none lg:rounded-r-lg">
+    <h5 class="text-2xl font-bold tracking-tight text-gray-100">{{post.data.title}}</h5>
+    <p class="mb-3 font-normal text-gray-200">{{post.data.alt}}</p>
+  </div>
+</a>

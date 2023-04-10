@@ -1,7 +1,8 @@
 ---
-title: My Godot Debugger Plugin
+title: Godot 4.0 Debugger Plugin
+draft: true
 ---
 
-# Todo
+# Why I created this plugin
 
-Todo
+ToDo
