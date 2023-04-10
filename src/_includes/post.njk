@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
     <title>{{ title }}</title>
   </head>
-  <body class="bg-gray-800 text-gray-100">
+  <body class="bg-gray-800 text-gray-100 post-style">
     {% include "partials/nav.njk" %}
 
-    <aside class="container mx-auto py-5 px-5">
+    <aside class="container max-w-5xl mx-auto pt-5 pb-0 px-5">
+
       <a onclick="history.back()" class="cursor-pointer inline-flex items-center py-3 px-3 text-sm font-bold text-center text-white bg-gray-700 rounded-lg hover:bg-gray-600 transition ease-in-out">
-        <i class="fa fa-solid fa-angle-left mr-2"></i>Zurück
+        <i class="fa fa-solid fa-angle-left mr-2 no-underline"></i>Zurück
       </a>
-      <h1 class="mt-6 text-center">{{ title }}</h1>
+
+      {% if header %}
+        <div class="header-image mt-5">
+          <img src="{{ header }}" class="rounded-lg w-full max-h-56 object-cover" alt="{{ title }}">
+        </div>
+      {% endif %}
+
+      <h1 class="mt-10 text-center">{{ title }}</h1>
       <span class="block text-gray-500 text-center">{{ page.date | readableDate }}</span>
     </aside>
 
-    <div class="container mx-auto py-5 px-5">
+    <div id="content" class="container max-w-5xl mx-auto py-5 px-5">
       {{ content | safe }}
     </div>
     {% include "partials/footer.njk" %}

@@ -2,20 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1 {
-    @apply mb-2 text-2xl font-bold;
-  }
+.post-style h1 {
+  @apply mt-6 mb-6 text-4xl font-bold;
+}
 
-  h2 {
-    @apply mb-1 text-xl font-bold;
-  }
+.post-style h2 {
+  @apply mb-3 mt-10 text-3xl font-bold;
+}
 
-  h3 {
-    @apply mb-1 text-lg font-bold;
-  }
+.post-style h3 {
+  @apply mb-3 mt-10 text-2xl font-bold;
+}
 
-  ul {
-    @apply ml-4 list-inside list-disc;
-  }
+.post-style h4 {
+  @apply mb-3 mt-10 text-2xl font-bold italic;
+}
+
+.post-style h5 {
+  @apply mb-3 mt-10 text-xl italic;
+}
+
+.post-style h6 {
+  @apply mb-3 mt-10 text-sm italic;
 }
