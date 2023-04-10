@@ -1,13 +1,13 @@
+html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
+  margin: 0px;
+  background-color: rgb(31 41 55);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 model-viewer {
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   background-color: rgb(31 41 55);
 }
 
@@ -16,7 +16,9 @@ model-viewer {
 }
 
 .Hotspot {
-  background: #fff;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
   border-radius: 32px;
   border: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
@@ -31,7 +33,7 @@ model-viewer {
 
 .Hotspot:not([data-visible]) {
   background: transparent;
-  border: 4px solid #fff;
+  border: 4px solid rgba(0, 0, 0, 0.5);
   box-shadow: none;
   height: 32px;
   pointer-events: none;
@@ -51,10 +53,11 @@ model-viewer {
 }
 
 .HotspotAnnotation {
-  background: #fff;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   display: block;
   font-family: Futura, Helvetica Neue, sans-serif;
   font-size: 18px;
@@ -139,4 +142,63 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 
 model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
+}
+
+#ar-button-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 4; /* position in front of the annotations */
+  bottom: 0px;
+  text-align: center;
+}
+
+#ar-button {
+  font-family: inherit; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+  text-transform: none;
+  margin-bottom: 20px;
+  padding: 0.5em 1.75em;
+  font-size: 1.75em;
+  border-radius: 24px;
+  border: none;
+  color: #fff;
+}
+
+#ar-button i {
+  display: block;
+}
+
+#model-info-container {
+  margin: 0.75em;
+  position: relative;
+  display: flex;
+  text-align: left;
+  justify-content: start;
+  z-index: 4; /* position in front of the annotations */
+}
+
+#model-info {
+  display: inline-block;
+  border-radius: 24px;
+  padding: 1.25rem;
+  margin: 0px;
+  color: #fff;
+}
+
+#model-info h5 {
+  margin: 0px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#model-info p {
+  margin: 0px;
+}
+
+.blur {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
 }
