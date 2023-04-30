@@ -48,11 +48,17 @@ Aseprite is an outstanding open-source software, specifically designed for creat
 
 ### Material Maker
 
-todo
+Material Maker (a software made with the Godot Engine btw) can be best described as a tool for creating textures with a node-based setup. You combine different types of nodes that influence your texture (e.g. adds a pattern, rotates the texture or adds contrast or shapes to it) into a final graph that computes your final texture. There are great examples of these node graphs out there for you to take a look at. If you need a procedurally generated texture, try it out.
+
+<a class="cta-button my-4" href="https://www.materialmaker.org/">Try Material Maker</a>
+
 
 ### Blender
 
-todo
+Blender is a whole suite of tools related to graphics and 3d modelling. You can edit your 3d models, texture them or render out images from your models. I use it mostly to edit my 3d meshes from photogrammetry or 3d scans and optimize them for the web.
+
+<a class="cta-button my-4" href="https://www.blender.org/">Try Blender</a>
+
 
 ## Typesetting and Writing
 
