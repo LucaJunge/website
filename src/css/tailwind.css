@@ -34,8 +34,20 @@
 .post-style blockquote a {
   @apply ml-1 text-cyan-700;
 }
-/* Model List */
 
+.post-style img {
+  @apply mx-auto rounded-lg my-7;
+}
+
+.post-style code:not(pre code) {
+  @apply mx-0.5 my-2 px-2 py-0.5 bg-gray-900 rounded-lg;
+}
+
+.post-style pre[class^="language-"] {
+  @apply my-7 p-2 rounded-lg bg-gray-900;
+}
+
+/*** Model List Styles ***/
 .model-list-style h1 {
   @apply mt-6 mb-2 text-4xl font-bold;
 }
