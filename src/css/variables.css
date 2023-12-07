@@ -1,0 +1,13 @@
+:root {
+  --text-color: #000000;
+  --purple-dark: #4c0026;
+  --purple-light: #792f4c;
+  --white: #ffffff;
+  --black: #000000;
+  --navbar-button-hover: #cccccc;
+  --blue-light: #7699d4;
+  --accent: #d3e0f3;
+  --blue-dark: #335c81;
+}
+
+/* Breakpoints */

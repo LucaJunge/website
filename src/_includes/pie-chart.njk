@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <script src="/libs/chart.min.js"></script>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    {% include "partials/header.njk" %}
+
+    <aside>
+
+      <a onclick="history.back()">
+        <i class="fa fa-solid fa-angle-left"></i>Zurück
+      </a>
+
+      <h1 >{{ title }}</h1>
+      <span>{{ page.date | formatDate }}</span>
+    </aside>
+
+    <div id="content">
+      <canvas id="chart" height="200"></canvas>
+    </div>
+
+    {% include "partials/footer.njk" %}
+
+    <script>
+      let projectData = {{ projects | stringify | safe }}
+      let chart = new Chart(document.querySelector("#chart"), {
+        type: "pie",
+        data: {
+          labels: projectData.map(row => row.name),
+          datasets: [
+            {
+              data: projectData.map(row => row.amount)
+            }
+          ]
+        },
+        options: {
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: function (context) {
+                  let label = context.dataset.label || '';
+
+                  if (label) {
+                    label += ': ';
+                  }
+
+                  label += new Intl
+                    .NumberFormat('de-DE', {
+                      style: 'currency',
+                      currency: 'EUR'
+                    })
+                    .format(context.parsed);
+
+                  return label;
+                }
+              }
+            }
+          },
+          responsive: false
+        }
+      })
+    </script>
+  </body>
+</html>

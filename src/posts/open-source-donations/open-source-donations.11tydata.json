@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "name": "Godot Engine",
+      "amount": "25"
+    },
+    {
+      "name": "Kenney (Game Assets)",
+      "amount": "4"
+    },
+    {
+      "name": "Mozilla Thunderbird",
+      "amount": "5.70"
+    }
+  ]
+}

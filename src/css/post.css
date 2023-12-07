@@ -1,0 +1,36 @@
+article header h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+article header h1 a {
+  display: block;
+  text-decoration: none;
+}
+
+article header h1 a:focus-visible {
+  outline: 4px solid black;
+  outline-offset: 2px;
+}
+
+article header time {
+  display: block;
+  padding: 4px 1px;
+}
+
+article > p {
+  padding-top: 8px;
+}
+
+article > a {
+  display: inline-block;
+  padding-top: 8px;
+}
+
+li > article ~ li > article {
+  margin-bottom: 10px;
+}
+
+article {
+  outline: 1px solid black;
+}

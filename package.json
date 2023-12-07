@@ -5,13 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "npm-run-all -p dev:*",
-    "dev:11ty": "npx @11ty/eleventy --serve",
-    "dev:tailwind": "tailwindcss -i src/css/tailwind.css -o _site/css/style.css --watch --postcss",
-    "build": "run-s build:*",
-    "build:11ty": "npx @11ty/eleventy",
-    "build:tailwind": "tailwindcss -i src/css/tailwind.css -o _site/css/style.css --postcss",
-    "deploy": "scp -r _site/* strato:www/"
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "deploy": "scp -r _site/* contabo:www/luca-junge.de/"
   },
   "keywords": [],
   "author": "Luca Junge",
@@ -22,11 +18,10 @@
     "autoprefixer": "^10.4.13",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.18",
-    "prettier": "2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.13",
-    "tailwindcss": "^3.2.1"
+    "prettier": "2.7.1"
   },
   "dependencies": {
+    "chart.js": "^4.4.0",
     "luxon": "^3.1.0"
   }
 }

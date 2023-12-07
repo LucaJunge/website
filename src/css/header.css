@@ -1,0 +1,33 @@
+body > header {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  font-weight: bold;
+}
+
+body > header > nav {
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--purple-dark);
+}
+
+body > header > nav > ul {
+  display: flex;
+  column-gap: 10px;
+}
+
+body > header > nav a > i {
+  padding: 10px;
+  background-color: var(--purple-dark);
+  color: var(--white);
+  transition: 0.2s ease-out;
+  transition-property: background;
+}
+
+body > header > nav a:hover > i {
+  background-color: var(--purple-light);
+}
