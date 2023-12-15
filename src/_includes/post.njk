@@ -27,9 +27,12 @@
       <span>{{ page.date | formatDate }}</span>
     </aside>
 
-    <div id="content">
-      {{ content | safe }}
-    </div>
+    <main>
+      <article>
+        {{ content | safe }}
+      </article>
+    </main>
+
     {% include "partials/footer.njk" %}
   </body>
 </html>

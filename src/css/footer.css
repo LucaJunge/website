@@ -1,9 +1,7 @@
-footer {
-  background-color: transparent;
+#main-footer {
+  font-family: "Caveat";
   padding: 0.75rem 1rem 0.75rem 1rem;
-  color: var(--black);
   font-weight: bold;
-
   display: flex;
   justify-content: center;
   align-items: center;

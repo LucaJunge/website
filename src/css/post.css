@@ -1,16 +1,12 @@
 article header h1 {
   font-weight: bold;
   font-size: 1.5rem;
+  margin: 0px;
 }
 
 article header h1 a {
   display: block;
   text-decoration: none;
-}
-
-article header h1 a:focus-visible {
-  outline: 4px solid black;
-  outline-offset: 2px;
 }
 
 article header time {
@@ -19,18 +15,49 @@ article header time {
 }
 
 article > p {
-  padding-top: 8px;
+  margin: 0px;
+  padding: 0px;
 }
 
 article > a {
   display: inline-block;
+  color: var(--accent-red);
+  text-decoration-thickness: 3px;
+  margin-bottom: 3px;
   padding-top: 8px;
 }
 
-li > article ~ li > article {
-  margin-bottom: 10px;
+ul > li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-article {
-  outline: 1px solid black;
+/* Aside Header */
+
+aside a {
+  background-color: var(--accent-yellow);
+  color: var(--accent-red);
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+aside a i {
+  margin-right: 4px;
+}
+
+aside {
+  padding: 0px 16px;
+}
+
+aside div > img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+aside h1 {
+  margin: 0em 0px 0.2em 0px;
 }

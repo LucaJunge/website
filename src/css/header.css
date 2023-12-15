@@ -1,33 +1,38 @@
-body > header {
+#main-header {
+  font-family: "Caveat";
+  font-size: 20pt;
+  padding: 18px;
+}
+
+#main-header a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#main-header ul {
   display: flex;
+  gap: 10px;
+  flex-direction: row;
   justify-content: center;
-  background-color: transparent;
-  padding: 0.75rem 1rem 0.75rem 1rem;
+  align-items: baseline;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
   font-weight: bold;
 }
 
-body > header > nav {
-  display: flex;
-  /*flex-direction: row;*/
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--purple-dark);
+#main-header ul li {
+  margin: 0px;
+  padding: 0px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 8px;
+  text-decoration: var(--text-color) wavy underline;
 }
 
-body > header > nav > ul {
-  display: flex;
-  column-gap: 10px;
-}
+/* Breakpoints */
 
-body > header > nav a > i {
-  padding: 10px;
-  background-color: var(--purple-dark);
-  color: var(--white);
-  transition: 0.2s ease-out;
-  transition-property: background;
-}
-
-body > header > nav a:hover > i {
-  background-color: var(--purple-light);
+@media (max-width: 400px) {
+  #main-header > nav > ul {
+    flex-direction: column;
+  }
 }
