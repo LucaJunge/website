@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "Inter";
-  src: url("/assets/InterVariable.ttf");
-}
-
-@font-face {
-  font-family: "Caveat";
-  src: url("/assets/CaveatVariable.ttf");
+  font-family: "Quicksand";
+  src: url("/assets/fonts/QuicksandVariable.ttf");
 }

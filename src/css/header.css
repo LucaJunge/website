@@ -1,5 +1,5 @@
 #main-header {
-  font-family: "Caveat";
+  background-color: var(--dark-background-color);
   font-size: 20pt;
   padding: 18px;
 }
@@ -11,7 +11,7 @@
 
 #main-header ul {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
@@ -26,7 +26,9 @@
   padding: 0px;
   text-decoration-skip-ink: none;
   text-underline-offset: 8px;
-  text-decoration: var(--text-color) wavy underline;
+  text-decoration-thickness: 8px;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
 }
 
 /* Breakpoints */

@@ -12,23 +12,13 @@
     {% include "partials/header.njk" %}
 
     <aside>
-
-      <a onclick="history.back()">
-        <i class="fa fa-solid fa-angle-left"></i>Zurück
-      </a>
-
-      {% if header %}
-        <div>
-          <img src="{{ header }}" alt="{{ title }}">
-        </div>
-      {% endif %}
-
-      <h1>{{ title }}</h1>
+      <h1>{{title}}</h1>
     </aside>
 
-    <div id="content">
+    <main>
       {{ content | safe }}
-    </div>
+    </main>
+
     {% include "partials/footer.njk" %}
   </body>
 </html>

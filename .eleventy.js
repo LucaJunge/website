@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("createExcerpt", (post) => {
     // This removes "<" and ">" from the output
     const content = post.replace(/(<([^>]+)>)/gi, "")
-    return content.substr(0, content.lastIndexOf(" ", 180)) + "..."
+    return content.substr(0, content.lastIndexOf(" ", 450)) + "..."
   })
 
   eleventyConfig.addFilter("stringify", (object) => {

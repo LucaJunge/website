@@ -1,3 +1,4 @@
+@import url("./fonts.css");
 @import url("./normalize.css");
 @import url("./variables.css");
 @import url("./header.css");
@@ -5,17 +6,17 @@
 
 html,
 body {
-  font-family: "Inter", sans-serif;
-  background-color: antiquewhite;
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--background-color);
   color: var(--text-color);
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Caveat", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 h1 > a,
@@ -24,6 +25,35 @@ h3 > a,
 article > a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+h1::after,
+h2::after,
+h3::after {
+  display: block;
+  width: 100px;
+  height: 8px;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  content: "";
+  border-radius: var(--border-radius);
+  background-color: var(--accent);
+}
+
+aside {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside > :not(a) {
+  flex: 1;
+  width: 768px;
+}
+
+aside a {
+  align-self: center;
 }
 
 main {
@@ -38,8 +68,19 @@ main > * {
   width: 768px;
 }
 
+.button {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  padding: 8px;
+  color: var(--text-color);
+  background-color: var(--accent);
+}
+
 @media (max-width: 400px) {
-  main > * {
+  main > *,
+  aside {
     width: 100%;
   }
 }

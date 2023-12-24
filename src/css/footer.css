@@ -1,5 +1,5 @@
 #main-footer {
-  font-family: "Caveat";
+  background-color: var(--dark-background-color);
   padding: 0.75rem 1rem 0.75rem 1rem;
   font-weight: bold;
   display: flex;

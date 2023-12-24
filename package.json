@@ -7,7 +7,7 @@
     "start": "npm run dev",
     "dev": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "deploy": "scp -r build/ server:/tmp/ && ssh server 'sudo cp /tmp/build/* ~/www/luca-junge.de/"
+    "deploy": "scp -r build/ server:/tmp/ && ssh server 'sudo cp -r /tmp/build/* ~/www/luca-junge.de/"
   },
   "keywords": [],
   "author": "Luca Junge",
