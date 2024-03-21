@@ -3,84 +3,29 @@
 @import url("./variables.css");
 @import url("./header.css");
 @import url("./footer.css");
+@import url("./sections.css");
+@import url("./hero.css");
 
 html,
 body {
-  font-family: "Quicksand", sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-h1 > a,
-h2 > a,
-h3 > a,
-article > a {
+/* Button */
+button {
+  border: none;
+  color: inherit;
   text-decoration: none;
-  color: var(--text-color);
-}
-
-h1::after,
-h2::after,
-h3::after {
-  display: block;
-  width: 100px;
-  height: 8px;
-  margin-top: 6px;
-  margin-bottom: 0px;
-  content: "";
-  border-radius: var(--border-radius);
-  background-color: var(--accent);
-}
-
-aside {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-aside > :not(a) {
-  flex: 1;
-  width: 768px;
-}
-
-aside a {
-  align-self: center;
-}
-
-main {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main > * {
-  flex: 1;
-  width: 768px;
-}
-
-.button {
-  cursor: pointer;
-  display: inline-block;
-  font-weight: bold;
-  border-radius: var(--border-radius);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 8px;
-  color: var(--text-color);
-  background-color: var(--accent);
+  transition: background-color 0.25s ease-in-out;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-@media (max-width: 400px) {
-  main > *,
-  aside {
-    width: 100%;
-  }
+button:hover,
+button:focus-visible {
+  outline: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.5);
 }

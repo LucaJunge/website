@@ -1,5 +1,6 @@
 #main-footer {
-  background-color: var(--dark-background-color);
+  background-color: #111111;
+  color: #ffffff;
   padding: 0.75rem 1rem 0.75rem 1rem;
   font-weight: bold;
   display: flex;

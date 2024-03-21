@@ -4,20 +4,70 @@ title: luca-junge.de
 permalink: /index.html
 ---
 
-{%- for post in collections.post -%}
-  <article>
-    <header>
-      <h1>
-        <a href="{{post.url}}">{{post.data.title}}</a>
-      </h1>
+<section class="hero">
+  <div class="section-content">
+    <div>
+      <h1>This is a test for my website</h1>
+      <button>Contact me</button>
+    </div>
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora eligendi impedit labore voluptatibus accusamus rerum fugit amet aut, porro quo ad vel omnis rem distinctio excepturi voluptas et soluta natus sunt delectus animi modi laborum fuga! Magni id pariatur natus est ab accusantium iusto exercitationem, vitae ipsam necessitatibus doloribus vero?
+    </p>
+    </div>
+  </div>
+</section>
 
-      <time>{{post.date | formatDate }}</time>
-    </header>
+<section class="section-background" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/GY2YuO3r.jpg');">
+  <div class="section-content">
+    <div>
+      <h1>This is a another section statement</h1>
+    </div>
+    <div>
+      <p>And a small text that explains this statement further. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, a qui! Laboriosam explicabo reprehenderit iusto ipsam animi earum dolor vero?</p>
+    </div>
+  </div>
+</section>
 
-    <p>{{post.templateContent | createExcerpt}}</p>
+<section>
+  <div class="section-content">
+    <div>
+      <h1>My Portfolio</h1>
+    </div>
+    <div>
+      <p>This is currently work in progress.</p>
+    </div>
+  </div>
+</section>
 
-    <a class="button" href="{{post.url}}">
-        Weiterlesen
-    </a>
-  </article>
-{%- endfor -%}
+<section>
+  <div class="section-content">
+    <div>
+      <h1>My Workflows</h1>
+    </div>
+    <div>
+      <p>This is currently work in progress.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-content">
+    <div>
+      <h1>My Blog</h1>
+    </div>
+    <div>
+      <p>This is currently work in progress.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-content">
+    <div>
+      <h1>Kontakt</h1>
+    </div>
+    <div>
+      <p>This is currently work in progress.</p>
+    </div>
+  </div>
+</section>

@@ -1,17 +1,21 @@
-#main-header {
-  background-color: var(--dark-background-color);
-  font-size: 20pt;
-  padding: 18px;
+#navigation {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  backdrop-filter: blur(4px);
+  margin-bottom: -70px;
+  outline: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-#main-header a {
+#navigation a {
   text-decoration: none;
-  color: var(--text-color);
+  color: #ffffff;
 }
 
-#main-header ul {
+#navigation ul {
   display: flex;
-  gap: 20px;
+  gap: 18px;
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
@@ -21,14 +25,36 @@
   font-weight: bold;
 }
 
-#main-header ul li {
-  margin: 0px;
-  padding: 0px;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 8px;
-  text-decoration-thickness: 8px;
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
+#navigation a {
+  padding: 8px;
+  display: inline-block;
+  transition: background-color 0.25s ease-in-out;
+  border-radius: 4px;
+}
+
+#navigation a:hover,
+#navigation a:focus-visible {
+  outline: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#navigation img {
+  height: 1em;
+  object-fit: contain;
+}
+
+#navigation .icon-button a {
+  padding: 8px;
+}
+
+#navigation .icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navigation .icon-button img {
+  vertical-align: middle;
 }
 
 /* Breakpoints */

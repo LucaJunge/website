@@ -2,5 +2,6 @@
   "emmet.includeLanguages": {
     "njk": "html",
     "nunjucks": "html"
-  }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
