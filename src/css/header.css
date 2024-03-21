@@ -3,6 +3,7 @@
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 12px;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   margin-bottom: -70px;
   outline: 1px solid rgba(0, 0, 0, 0.5);
@@ -57,10 +58,43 @@
   vertical-align: middle;
 }
 
+#navigation .menu-button {
+  display: none;
+}
+
 /* Breakpoints */
 
-@media (max-width: 400px) {
-  #main-header > nav > ul {
+@media (max-width: 512px) {
+  #navigation nav ul {
+    justify-content: space-between;
+  }
+
+  #navigation nav ul li {
+    display: none;
+  }
+
+  #navigation li.menu-button,
+  #navigation li.home-button,
+  #navigation li.contact-button {
+    display: inline-block;
+  }
+
+  /* Hide all buttons except home and menu */
+  /*#navigation nav ul li *:not(a.menu-button),
+  #navigation :not(a.home-button) {
+    display: none;
+  }*/
+
+  #navigation.open {
+    background-color: rgba(59, 66, 82, 1);
+  }
+
+  #navigation.open ul {
+    justify-content: space-between;
     flex-direction: column;
+  }
+
+  #navigation.open nav ul li {
+    display: inline-block;
   }
 }
