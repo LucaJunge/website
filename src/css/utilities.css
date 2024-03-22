@@ -1,0 +1,22 @@
+:root {
+    --distance-small: 4px;
+    --distance-medium: 8px;
+    --distance-large: 12px;
+    --distance-huge: 16px;
+    --breakpoint: 1024px;
+}
+
+.content-padding {
+    padding: var(--distance-large);
+}
+
+.container {
+    max-width: var(--breakpoint);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

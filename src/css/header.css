@@ -58,7 +58,7 @@
   vertical-align: middle;
 }
 
-#navigation .menu-button {
+#navigation #menu-button {
   display: none;
 }
 
@@ -73,9 +73,9 @@
     display: none;
   }
 
-  #navigation li.menu-button,
-  #navigation li.home-button,
-  #navigation li.contact-button {
+  #navigation li#menu-button,
+  #navigation li#home-nav,
+  #navigation li#contact-nav {
     display: inline-block;
   }
 

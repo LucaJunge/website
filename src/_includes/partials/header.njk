@@ -1,33 +1,42 @@
 <header id="navigation">
   <nav>
     <ul>
-      <li class="home-button">
-        <a href="/" title="Zur Startseite">
+      <li id="home-nav">
+        <a href="/" title="To Homepage">
           <i class="fa-solid fa-house"></i>
         </a>
       </li>
-      <li>
-        <a href="/portfolio/" title="Alle Posts">Portfolio</a>
+      <li id="portfolio-nav">
+        <a href="/portfolio/" title="My Portfolio">Portfolio</a>
       </li>
-      <li>
-        <a href="/workflows/" title="Workflow">Workflows</a>
+      <li id="workflows-nav">
+        <a href="/workflows/" title="Workflows">Workflows</a>
       </li>
-      <li>
+      <li id="blog-nav">
         <a href="/blog/" title="Blog">Blog</a>
       </li>
-      <li class="contact-button">
-        <a href="/contact/" title="Kontakt">Kontakt</a>
+      <li id="contact-nav">
+        <a href="/contact/" title="Contact">Kontakt</a>
       </li>
-      <li>
-        <a href="https://github.com/LucaJunge" title="GitHub Profil">
+      <li id="github-nav">
+        <a href="https://github.com/LucaJunge" title="GitHub profile">
           <i class="fa-brands fa-github"></i>
         </a>
       </li>
-      <li class="menu-button">
-        <a title="Menu anzeigen">
+      <li id="menu-button">
+        <a title="Show menu">
           <i class="fa fa-solid fa-bars"></i>
         </a>
       </li>
     </ul>
   </nav>
 </header>
+
+
+<script>
+let menuButton = document.querySelector("#menu-button a")
+
+menuButton.addEventListener("click", () => {
+  document.querySelector("#navigation").classList.toggle("open")
+})
+</script>

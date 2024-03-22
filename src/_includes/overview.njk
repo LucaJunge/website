@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
     <title>{{ title }}</title>
   </head>
-  <body>
+  <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.9)), url('/assets/images/blog_mobile.jpg');">
     {% include "partials/header.njk" %}
 
-    <aside>
+    <aside style="margin-top: 70px;">
       <h1>{{title}}</h1>
     </aside>
 
-    <main>
-      {{ content | safe }}
+    <main class="flex">
+      <div class="content-padding container">
+        {{ content | safe }}
+      </div>
     </main>
 
     {% include "partials/footer.njk" %}

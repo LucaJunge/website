@@ -32,6 +32,7 @@ section:nth-child(even) {
 .section-content div {
   max-width: 50%;
   display: flex;
+  row-gap: 14px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -47,15 +48,37 @@ section p {
   margin: 0px;
   line-height: 1.8em;
   font-weight: 600;
-  font-size: 1.2em;
 }
 
 section h1 {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .section-background {
   background-size: cover;
   object-fit: cover;
   background-position: center;
+  backdrop-filter: blur(3px);
+}
+
+aside {
+  padding: 12px 0px 16px 12px;
+}
+
+aside h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 512px) {
+    /* Make the left-to-right sections top-to-bottom */
+    .section-content div {
+      max-width: 100%;
+    }
+  
+    .section-content {
+      flex-direction: column;
+    }
 }

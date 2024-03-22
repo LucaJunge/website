@@ -1,3 +1,4 @@
+@import url("./utilities.css");
 @import url("./fonts.css");
 @import url("./normalize.css");
 @import url("./variables.css");
@@ -8,6 +9,7 @@
 
 html,
 body {
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   background-color: rgba(59, 66, 82, 1);
 }
@@ -15,6 +17,7 @@ body {
 /* Button */
 button,
 .button {
+  display: inline-block;
   box-sizing: border-box;
   border: none;
   color: inherit;
@@ -35,6 +38,10 @@ button:focus-visible,
 .button:focus-visible {
   background-color: rgba(163, 190, 140, 0.3);
   border: 3px solid rgba(163, 190, 140, 0.3);
+}
+
+.inline-button {
+  color: rgb(51, 100, 224);
 }
 
 a {
